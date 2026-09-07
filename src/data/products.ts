@@ -1,0 +1,28 @@
+export type Product = {
+  id: number
+  name: string
+  brand: string
+  image: string
+  rating: number
+  reviews: number
+  tag: string
+  score: number
+  localPrice: number
+  importPrice: number
+  importShipping: number
+  battery: string
+  weight: string
+  anc: string
+  localStore: string
+  importStore: string
+  localUrl: string
+  importUrl: string
+  accent: string
+}
+
+export const products: Product[] = [
+  { id: 1, name: 'WH-1000XM5', brand: 'Sony', image: 'https://images.unsplash.com/photo-1546435770-a3e426bf472b?auto=format&fit=crop&w=900&q=85', rating: 4.8, reviews: 328, tag: 'Best overall', score: 92, localPrice: 6499, importPrice: 3560, importShipping: 480, battery: '30 hrs', weight: '250 g', anc: 'Excellent', localStore: 'Takealot', importStore: 'Amazon US', localUrl: 'https://www.takealot.com/all?query=Sony%20WH-1000XM5', importUrl: 'https://www.amazon.com/s?k=Sony+WH-1000XM5', accent: '#d8f45a' },
+  { id: 2, name: 'QuietComfort Ultra', brand: 'Bose', image: 'https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=85', rating: 4.7, reviews: 214, tag: 'Best ANC', score: 89, localPrice: 7299, importPrice: 4210, importShipping: 520, battery: '24 hrs', weight: '253 g', anc: 'Outstanding', localStore: 'HiFi Corp', importStore: 'B&H Photo', localUrl: 'https://www.hificorp.co.za/search?q=QuietComfort%20Ultra', importUrl: 'https://www.bhphotovideo.com/c/search?q=Bose%20QuietComfort%20Ultra', accent: '#ffb17a' },
+  { id: 3, name: 'Space Q45', brand: 'Soundcore', image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?auto=format&fit=crop&w=900&q=85', rating: 4.5, reviews: 164, tag: 'Best value', score: 85, localPrice: 1899, importPrice: 1240, importShipping: 390, battery: '50 hrs', weight: '295 g', anc: 'Very good', localStore: 'Incredible', importStore: 'Amazon UK', localUrl: 'https://www.incredible.co.za/catalogsearch/result/?q=Soundcore%20Space%20Q45', importUrl: 'https://www.amazon.co.uk/s?k=Soundcore+Space+Q45', accent: '#8ec8ff' },
+  { id: 4, name: 'Momentum 4 Wireless', brand: 'Sennheiser', image: 'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?auto=format&fit=crop&w=900&q=85', rating: 4.6, reviews: 187, tag: 'Best battery', score: 88, localPrice: 5899, importPrice: 3130, importShipping: 450, battery: '60 hrs', weight: '293 g', anc: 'Very good', localStore: 'Sound X Perience', importStore: 'Thomann', localUrl: 'https://www.soundxperience.co.za/?s=Momentum%204%20Wireless', importUrl: 'https://www.thomann.de/intl/search_dir.html?sw=Sennheiser%20Momentum%204', accent: '#cab4ff' },
+]
