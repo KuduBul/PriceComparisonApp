@@ -40,6 +40,8 @@ The API is available at:
 
 The frontend proxies `/api` requests to port 8787. If the API is unavailable, the UI uses the local seed catalogue so the prototype remains usable.
 
+When deployed to Vercel, the files in `api/` provide the same endpoints as native Vercel serverless functions, so no long-running Node process is required in production.
+
 ## Verification
 
 ```bash
