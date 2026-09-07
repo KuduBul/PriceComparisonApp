@@ -20,7 +20,7 @@
 
 ## Product and Retailer Data
 
-- [ ] **TASK-006 P0** Identify permitted retailer, manufacturer, review, exchange-rate, and import-cost sources.
+- [x] **TASK-006 P0** Identify permitted retailer, manufacturer, review, exchange-rate, and import-cost sources.
 - [ ] **TASK-007 P0** Create models for products, variants, identifiers, specifications, retailers, sellers, offers, reviews, warranties, returns, and price observations.
 - [ ] **TASK-008 P0** Implement product and variant matching using brand, model, MPN, GTIN/EAN, SKU, URL, images, and variant attributes.
 - [ ] **TASK-009 P0** Load an initial catalogue of at least 50 verified headphone products.
@@ -94,7 +94,8 @@
 - [x] Add compare tray selection interaction.
 - [x] Add editable landed-cost calculator drawer.
 - [x] Add source and estimate transparency copy.
-- [ ] Replace prototype data with permitted live feeds.
+- [x] Add a permission-safe configurable HTTPS feed adapter and contract.
+- [ ] Configure the first permitted retailer or affiliate feed in Vercel.
 - [ ] Add real persistence and backend services.
 
 ## MVP Release Gate
