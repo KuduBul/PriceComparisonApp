@@ -124,4 +124,4 @@ The application feed contract is documented in [live-feed-contract.md](live-feed
 
 ## Decision
 
-Proceed with **eBay Browse API** as the first live provider because it has the clearest official API contract and supports affiliate forwarding. Do not configure a fake URL or scrape Takealot/PriceCheck. The next implementation task is an authenticated eBay adapter with environment variables for client credentials and marketplace selection.
+Proceed with **eBay Browse API** as the first live provider because it has the clearest official API contract and supports affiliate forwarding. The repository now includes an authenticated server-side adapter at `GET /api/ebay-search?q=...`. Configure eBay client credentials in Vercel before enabling it. Do not configure a fake URL or scrape Takealot/PriceCheck.

@@ -26,6 +26,7 @@
 - [ ] **TASK-009 P0** Load an initial catalogue of at least 50 verified headphone products.
 - [ ] **TASK-010 P0** Build local retailer offer ingestion.
 - [ ] **TASK-011 P0** Build international retailer offer ingestion.
+- [x] **TASK-011a P0** Add authenticated eBay Browse API search adapter and normalized offer response.
 - [ ] **TASK-012 P0** Add refresh jobs, retries, rate limits, stale suppression, and failure handling.
 - [ ] **TASK-013 P1** Build an internal data-quality queue for duplicates, conflicts, stale offers, unusual prices, and unresolved matches.
 - [ ] **TASK-014 P0** Store source URL, source type, retrieval time, confidence, and transformation history.
@@ -95,6 +96,7 @@
 - [x] Add editable landed-cost calculator drawer.
 - [x] Add source and estimate transparency copy.
 - [x] Add a permission-safe configurable HTTPS feed adapter and contract.
+- [x] Add an authenticated eBay Browse API adapter.
 - [ ] Configure the first permitted retailer or affiliate feed in Vercel.
 - [ ] Add real persistence and backend services.
 

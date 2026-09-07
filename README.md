@@ -11,6 +11,7 @@ South African product comparison prototype focused on realistic ZAR cost, produc
 - Product comparison tray.
 - Local catalogue API with frontend fallback.
 - Configurable permitted HTTPS feed adapter.
+- Authenticated eBay Browse API search adapter.
 
 ## Run Locally
 
@@ -38,6 +39,7 @@ The API is available at:
 
 - `GET http://localhost:8787/api/health`
 - `GET http://localhost:8787/api/products`
+- `GET /api/ebay-search?q=over-ear+headphones`
 
 The frontend proxies `/api` requests to port 8787. If the API is unavailable, the UI uses the local seed catalogue so the prototype remains usable.
 
@@ -52,6 +54,12 @@ cp .env.example .env
 The feed contract is documented in [docs/live-feed-contract.md](docs/live-feed-contract.md). `CATALOG_FEED_TOKEN` can be used for a provider that requires bearer authentication. On Vercel, configure these as Project Environment Variables for Preview and Production; do not commit the values.
 
 When `CATALOG_FEED_URL` is not configured, the API deliberately reports `local fallback` so the deployment does not present fixture data as live retailer data.
+
+## eBay Browse API
+
+The server-side eBay adapter uses the official Browse API and requires an eBay developer application with client credentials. Set `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`, and optionally `EBAY_MARKETPLACE_ID` in Vercel Project Environment Variables. The browser never receives the client secret.
+
+The endpoint returns normalized offer records and uses eBay's `itemAffiliateWebUrl` when available. It returns `503` until credentials are configured rather than displaying fake live results.
 
 When deployed to Vercel, the files in `api/` provide the same endpoints as native Vercel serverless functions, so no long-running Node process is required in production.
 
