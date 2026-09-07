@@ -66,6 +66,8 @@ npm run build
 
 - [Business requirements](BRD.md)
 - [Development tasks](DEVELOPMENT_TASKS.md)
+- [Live feed provider research](docs/feed-provider-research.md)
+- [Live feed contract](docs/live-feed-contract.md)
 
 ## Next Implementation Boundary
 
